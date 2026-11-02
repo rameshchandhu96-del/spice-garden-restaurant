@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spice Garden - Authentic Indian food, fresh ingredients and unforgettable flavours.">
+    <title>Spice Garden | Authentic Indian Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Spice<span>Garden.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact" class="nav-button">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <p class="eyebrow">WELCOME TO SPICE GARDEN</p>
+                <h1>Good Food.<br>Great <span>Memories.</span></h1>
+                <p class="hero-description">
+                    Experience the authentic taste of India with fresh ingredients,
+                    traditional recipes and unforgettable flavours.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#contact" class="btn btn-outline">Visit Us</a>
+                </div>
+                <p class="hero-note">Freshly prepared • Made with love</p>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="container feature-grid">
+                <div class="feature">
+                    <span>🍃</span>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Quality ingredients every day.</p>
+                </div>
+                <div class="feature">
+                    <span>👨‍🍳</span>
+                    <h3>Expert Chefs</h3>
+                    <p>Authentic recipes and flavours.</p>
+                </div>
+                <div class="feature">
+                    <span>❤️</span>
+                    <h3>Made With Love</h3>
+                    <p>Every dish made with care.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section-padding container" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900" alt="Fresh Indian food served at a restaurant">
+                <div class="image-label">
+                    <strong>100%</strong>
+                    <span>Fresh Taste</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">OUR STORY</p>
+                <h2>A Place Where<br>Food Meets <span>Passion.</span></h2>
+                <p>
+                    At Spice Garden, we believe that great food brings people
+                    together. Our kitchen combines traditional Indian cooking
+                    with fresh ingredients to create delicious meals.
+                </p>
+                <p>
+                    Whether you are enjoying a family dinner or meeting friends,
+                    we make every visit special.
+                </p>
+                <a href="#contact" class="btn btn-dark">Discover More</a>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">TASTE THE DIFFERENCE</p>
+                    <h2>Our Special <span>Menu</span></h2>
+                    <p>Discover some of our most-loved dishes.</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="breakfast">Breakfast</button>
+                    <button class="filter-btn" data-category="lunch">Lunch</button>
+                    <button class="filter-btn" data-category="dinner">Dinner</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+
+                    <article class="food-card" data-category="lunch">
+                        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=700" alt="Indian chicken biryani" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Chicken Biryani</h3>
+                                <strong>₹150</strong>
+                            </div>
+                            <p>Fragrant basmati rice with aromatic spices.</p>
+                            <span class="food-tag">Bestseller</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="breakfast">
+                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=700" alt="South Indian dosa" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Masala Dosa</h3>
+                                <strong>₹90</strong>
+                            </div>
+                            <p>Crispy dosa served with chutney and sambar.</p>
+                            <span class="food-tag">Popular</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="dinner">
+                        <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=700" alt="Paneer curry" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Paneer Butter Masala</h3>
+                                <strong>₹180</strong>
+                            </div>
+                            <p>Soft paneer in rich creamy tomato gravy.</p>
+                            <span class="food-tag">Chef's Choice</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="lunch">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=700" alt="Indian thali meal" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Special Veg Thali</h3>
+                                <strong>₹160</strong>
+                            </div>
+                            <p>A complete traditional Indian meal.</p>
+                            <span class="food-tag">Healthy Choice</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="dinner">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=700" alt="Indian chicken curry" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Chicken Curry</h3>
+                                <strong>₹200</strong>
+                            </div>
+                            <p>Traditional curry with freshly ground spices.</p>
+                            <span class="food-tag">Favourite</span>
+                        </div>
+                    </article>
+
+                    <article class="food-card" data-category="breakfast">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700" alt="Indian samosa snacks" loading="lazy">
+                        <div class="food-info">
+                            <div class="food-title">
+                                <h3>Veg Samosa</h3>
+                                <strong>₹40</strong>
+                            </div>
+                            <p>Crispy pastry filled with spiced potatoes.</p>
+                            <span class="food-tag">Quick Bite</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIAL OFFER -->
+        <section class="offer-section">
+            <div class="container offer-content">
+                <p class="eyebrow">A LITTLE SOMETHING SPECIAL</p>
+                <h2>Good Food Is<br>Always a <span>Good Idea.</span></h2>
+                <p>Visit us today and enjoy delicious food with your loved ones.</p>
+                <a href="#contact" class="btn btn-primary">Book Your Table</a>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="reviews section-padding container" id="reviews">
+            <div class="section-heading">
+                <p class="eyebrow">CUSTOMER LOVE</p>
+                <h2>What People <span>Say</span></h2>
+            </div>
+
+            <div class="review-grid">
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing food and wonderful service. The biryani was delicious!"</p>
+                    <h3>Rahul S.</h3>
+                    <span>Happy Customer</span>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Beautiful atmosphere and authentic Indian flavours. Loved it!"</p>
+                    <h3>Priya M.</h3>
+                    <span>Happy Customer</span>
+                </article>
+
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Great place for family dinners. Excellent food and value."</p>
+                    <h3>Arun K.</h3>
+                    <span>Happy Customer</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">COME VISIT US</p>
+                    <h2>Let's Share a<br><span>Meal Together.</span></h2>
+                    <p>We look forward to welcoming you!</p>
+
+                    <div class="contact-details">
+                        <p>📍 <strong>Address:</strong> Main Road, Your City, Karnataka</p>
+                        <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+                        <p>✉️ <strong>Email:</strong> hello@spicegarden.com</p>
+                        <p>🕒 <strong>Hours:</strong> 9:00 AM – 10:00 PM</p>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hello%20Spice%20Garden" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        Order on WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900" alt="Restaurant dining interior" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">Spice<span>Garden.</span></a>
+            <p>Good food. Great memories. © <span id="year"></span> Spice Garden.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
